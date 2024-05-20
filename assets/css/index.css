@@ -1,6 +1,67 @@
 main {
+    #anchor {
+        anchor-name: --anchor-name;
+    }
 
-    @media screen and (541px <=width) {}
+    #anchored-element {
+        position: absolute;
+        position-anchor: --anchor-name;
+        /* top: anchor(top); */
+        justify-self: anchor-center;
+        align-self: anchor-center;
+    }
 
-    @media screen and (1083px <=width) {}
+    section {
+        h2 {
+            justify-self: left;
+        }
+    }
+
+    article {
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* row-gap: 1em; */
+        padding: 1.5em;
+        border-radius: 0.5em;
+        background-color: #34a8d6;
+
+        p {
+            /* padding: 1em; */
+            /* background-color: #98d2e9; */
+        }
+
+        h3 {
+            /* justify-self: center; */
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+
+
+    @media screen and (541px <=width) {
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        article {
+            h3 {
+                font-size: 1.25em;
+            }
+        }
+
+    }
+
+    @media screen and (1083px <=width) {
+        section {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4em;
+        }
+
+        article {
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
 }

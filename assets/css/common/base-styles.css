@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Orbitron';
     src: url('../../fonts/public/orbitron-extrabold.woff2') format('woff2');
 }
@@ -18,27 +18,23 @@
     font-family: 'Poppins';
     src: url('../../fonts/public/poppins-bold.woff2') format('woff2');
     font-weight: bold;
-}
+} */
 
 :root {
-    --primary-bg: #121212;
-    --secondary-bg: #03460b;
-    --text: #e0e0e0;
-    --bold-text: #f3efef;
-    --background-nav: #1f5e06;
-    --svg-primary-color: #ffffff;
-    --svg-secondary-color: #000000;
+    --primary-bg: #d8d8d8;
+    --secondary-bg: #2b80e2;
+    --text: #0a0909;
+    --background-nav: #063e5e;
+
     scrollbar-color: var(--secondary-bg) var(--primary-bg);
 
-    &:has(#color-toggle[open]) {
+    /* &:has(#color-toggle[open]) {
         --primary-bg: #dadada;
         --secondary-bg: #a4b183;
         --text: #271d1d;
-        --bold-text: #000000e5;
+        --text: #000000e5;
         --background-nav: #b6c720;
-        --svg-primary-color: #000000;
-        --svg-secondary-color: #ffffff;
-    }
+    } */
 }
 
 body {
@@ -53,7 +49,7 @@ body {
     text-wrap: balance;
     flex-basis: 100%;
     grid-column: 1/-1;
-    color: var(--bold-text);
+    color: var(--text);
 }
 
 h1 {
@@ -102,7 +98,7 @@ main {
     section {
         display: grid;
         flex-wrap: wrap;
-        gap: 2em;
+        gap: 3em;
     }
 
     ul {
