@@ -89,7 +89,7 @@ main {
                 grid-template-columns: repeat(9, 1fr);
                 gap: 2em 4em;
                 /* grid-template: repeat(5, min-content) / repeat(2, 1fr); */
-                grid-template-areas: "h2 h2 h2 h2 h2 h2 h2 h2 h2"
+                grid-template-areas:
                     "p1 p1 p1 p1 img1 img1 img1 img1 img1"
                     "p2 p2 p2 p2 img1 img1 img1 img1 img1"
                     "p3 p3 p3 p3 img1 img1 img1 img1 img1"
