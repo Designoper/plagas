@@ -14,10 +14,10 @@ header {
     }
 
     >[href="./"] {
-        font-family: "Orbitron", sans-serif;
+        /* font-family: "Orbitron", sans-serif; */
         font-size: 1.5em;
         line-height: initial;
-        transform: translateY(0.1em);
+        /* transform: translateY(0.1em); */
         margin-right: auto;
     }
 
@@ -180,7 +180,7 @@ header {
                 border-radius: 0.2em;
 
                 &:hover {
-                    background-color: var(--background-nav);
+                    background-color: var(--background-text-3);
                 }
             }
 

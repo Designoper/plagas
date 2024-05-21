@@ -1,9 +1,13 @@
 main {
     #anchor {
+        /* width: 100vw; */
         anchor-name: --anchor-name;
+        /* transform: translateX(-10vw); */
+        /* filter:sepia(50%); */
     }
 
     #anchored-element {
+
         position: absolute;
         position-anchor: --anchor-name;
         /* top: anchor(top); */
@@ -18,22 +22,35 @@ main {
     }
 
     article {
-        /* display: flex;
-        flex-wrap: wrap; */
-        /* row-gap: 1em; */
-        padding: 1.5em;
+        /* display: grid;
+        flex-wrap: wrap;
+        row-gap: 1.25em; */
+        overflow: hidden;
+        padding: 0 0 2.5em;
         border-radius: 0.5em;
-        background-color: #34a8d6;
+        background-color: var(--secondary-bg);
 
         p {
-            /* padding: 1em; */
+            padding: 0.75em 10% 1.75em;
             /* background-color: #98d2e9; */
         }
 
         h3 {
             /* justify-self: center; */
-            font-size: 1.5em;
-            text-align: center;
+            font-size: 1.25em;
+            font-weight: bold;
+            padding: 1em 10% 0;
+            /* text-align: center; */
+            /* color: white; */
+            /* background-color: var(--background-text-2); */
+        }
+
+        a {
+            display: block;
+            width: fit-content;
+            color: white;
+            background-color: var(--background-text);
+            margin: 0 auto;
         }
     }
 
@@ -55,10 +72,12 @@ main {
     @media screen and (1083px <=width) {
         section {
             grid-template-columns: repeat(3, 1fr);
-            gap: 4em;
+            gap: 3em 4em;
         }
 
         article {
+            /* padding: 1.5em 2em; */
+
             h3 {
                 font-size: 1.5em;
             }
